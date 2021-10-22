@@ -25,6 +25,21 @@ header h1{
     margin: 2px;
 }
 
+.training-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff9900;
+}
+
+.training-options img{
+    width: 85%;
+}
+
+.training-options h2{
+    color: #2b78e4;
+}
+
 footer{
     background-color: #ff9900;
     display: flex;
@@ -37,7 +52,7 @@ footer{
 }
 
 .social-media img{
-    width: 80px;
+    width: 30%;
 
 }
 
@@ -49,4 +64,42 @@ footer{
 
 .contact-information p{
     margin: 2px;
+}
+
+
+@media screen and (min-width: 600px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    header .header-title{
+        padding-left: 15%;
+        font-size: 50px;
+    }
+
+    .logo{
+        margin-left: 5%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social-media{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-media img{
+        margin: 10%;
+    }
+
+    .contact-information{
+        display: flex;
+        align-items: flex-end;
+    }
 }
