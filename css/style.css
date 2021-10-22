@@ -1,7 +1,11 @@
-div{
+/*div{
     border: solid black 1px;
     margin: 5px;
     padding: 5px;
+}*/
+body{
+    margin: 0;
+    background-color:#ff9900;
 }
 
 header{
@@ -72,6 +76,7 @@ footer{
         display: flex;
         flex-direction: row;
         text-align: center;
+        padding-bottom: 20px;
     }
 
     header .header-title{
@@ -83,10 +88,24 @@ footer{
         margin-left: 5%;
     }
 
+    .main-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .training-options img{
+        width: 350px;
+        height: 350px;
+    }
+
     footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding-top: 20px;
+        padding-right: 10%;
+        padding-left: 10%;
     }
 
     .social-media{
