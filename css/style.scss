@@ -1,0 +1,17 @@
+$primary-color:  #ff9900;
+$secondary-color: #2b78e4;
+
+@mixin header-footer{
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    @include header-footer();
+    align-items: center;
+}
+
+footer{
+    @include header-footer();
+}
