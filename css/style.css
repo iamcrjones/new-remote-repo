@@ -1,3 +1,14 @@
+div {
+  /*border: solid black 1px;*/
+  margin: 5px;
+  padding: 5px;
+}
+
+body {
+  margin: 0;
+  background-color: #ff9900;
+}
+
 header {
   background-color: #ff9900;
   display: flex;
@@ -18,6 +29,16 @@ header h1 {
   justify-content: center;
 }
 
+.training-options {
+  background-color: #ff9900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.training-options img {
+  width: 85%;
+}
+
 .social-media {
   display: flex;
   justify-content: space-between;
@@ -30,6 +51,48 @@ footer {
   background-color: #ff9900;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: row;
+  }
+  .social-media img {
+    margin: 10%;
+  }
+
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .training-options img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .contact-information {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

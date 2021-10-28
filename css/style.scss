@@ -1,6 +1,16 @@
 $primary-color:  #ff9900;
 $secondary-color: #2b78e4;
 
+div{
+    /*border: solid black 1px;*/
+    margin: 5px;
+    padding: 5px;
+}
+body{
+    margin: 0;
+    background-color:$primary-color;
+}
+
 @mixin header-footer{
     background-color: $primary-color;
     display: flex;
@@ -25,6 +35,14 @@ header {
     justify-content: center;
 }
 
+.training-options{
+   @include header-footer();
+    align-items: center;
+    img{
+        width: 85%;
+    }
+}
+
 .social-media{
     display: flex;
     justify-content: space-between;
@@ -35,4 +53,44 @@ header {
 
 footer{
     @include header-footer();
+}
+
+@media screen and (min-width: 600px) {
+    @mixin header-footer_desktop{
+        display: flex;
+        flex-direction: row;
+    }
+    header{
+        @include header-footer_desktop();
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    footer{
+        @include header-footer_desktop();
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .social-media{
+        @include header-footer_desktop();
+        img{
+            margin: 10%;
+        }
+    }
+    .main-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .training-options img{
+        width: 350px;
+        height: 350px;
+    }
+    .contact-information{
+        display: flex;
+        align-items: flex-end;
+    }
 }
