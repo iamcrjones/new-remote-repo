@@ -10,6 +10,27 @@ $secondary-color: #2b78e4;
 header {
     @include header-footer();
     align-items: center;
+    h1{
+        color: $secondary-color;
+        margin: 2px;
+    }
+}
+
+.logo{
+    display: flex;
+    background-color: $secondary-color;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 30%;
+    }
 }
 
 footer{
